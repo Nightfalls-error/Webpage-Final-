@@ -1,0 +1,134 @@
+/* styles.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f1ee; /* Light beige background */
+    font-family: 'Georgia', serif;
+    color: #4e342e; /* Dark brown text */
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff8f0; /* Cream background for content */
+    border: 2px solid #d7ccc8; /* Light brown border */
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #6d4c41; /* Medium brown */
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a1887f; /* Rustic brown */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #8d6e63;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #bcaaa4;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+nav {
+    width: 100%;
+    background-color: #d7ccc8; /* Light brown navigation */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #4e342e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #6d4c41;
+}
+
+#logout-btn {
+    background-color: #c62828; /* Red for logout */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#logout-btn:hover {
+    background-color: #b71c1c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #bcaaa4;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+#random-word, #search-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #efe6dd; /* Slightly different cream */
+    border: 1px solid #bcaaa4;
+    border-radius: 4px;
+}
+
+#reset-password {
+    color: #a1887f;
+    text-decoration: none;
+}
+
+#reset-password:hover {
+    text-decoration: underline;
+}
