@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Slang Word Randomizer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/homepage.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="wordlog.html">Word Log</a>
+        <a href="search.html">Search</a>
+        <a href="account.html">Account</a>
+        <button id="logout-btn">Log Out</button>
+    </nav>
+    <div class="container">
+        <h2>Random Filipino Slang Word</h2>
+        <div id="random-word">
+            <p><strong>Word:</strong> <span id="word"></span></p>
+            <p><strong>Meaning:</strong> <span id="meaning"></span></p>
+            <p><strong>Example:</strong> <span id="example"></span></p>
+        </div>
+        <button id="new-word-btn" class="btn">Get New Word</button>
+    </div>
+</body>
+</html>
